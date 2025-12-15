@@ -178,68 +178,13 @@ h3{color:#38bdf8;margin-top:0}
 .section button{max-width:220px}
 
 /* ================= RESPONSIVE ================= */
-
-
-
-/* Tablets */
-@media(max-width:1024px){
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-/* Mobile */
-@media(max-width:768px){
-  .container{
-    flex-direction:column;
-  }
-
-  .sidebar{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    padding:14px;
-  }
-
-  .sidebar h3,
-  .sidebar small{
-    display:none;
-  }
-
-  .sidebar a{
-    margin:0;
-    padding:10px 12px;
-    font-size:14px;
-  }
-
-  .main{
-    padding:20px;
-  }
-
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  h2{
-    font-size:20px;
-  }
-}
-
-/* Small mobile */
-@media(max-width:420px){
-  .card{
-    padding:24px;
-  }
-
-  button{
-    padding:12px;
-  }
+@media(max-width:800px){
+  .sidebar{display:none}
 }
 </style>
 </head>
 
 <body>
-
 
 <!-- ================= LOGIN ================= -->
 <div id="login" class="login">
@@ -355,4 +300,3 @@ const app=document.getElementById("app");
 
 </body>
 </html>
-
